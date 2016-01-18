@@ -1,0 +1,21 @@
+{
+  "name": "best-degree",
+  "version": "0.0.1",
+  "description": "Side project for eric lepine",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jermorin/best-degree.git"
+  },
+  "author": "llaine, jermorin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jermorin/best-degree/issues"
+  },
+  "homepage": "https://github.com/Jermorin/best-degree#readme"
+}
