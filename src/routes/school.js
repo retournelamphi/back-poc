@@ -9,6 +9,6 @@ router.route('/')
 router.route('/:schoolId')
     .get(schoolCtrl.getOne);
 
-router.param(':schoolId', schoolCtrl.getOne);
+router.param('schoolId', schoolCtrl.getOne);
 
 export default router;

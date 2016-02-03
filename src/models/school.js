@@ -18,7 +18,6 @@ SchoolSchema.statics = {
     get(id){
         return new Promise((resolve, reject) => {
             this.findById(id, (errMongo, school) => {
-                console.log(id, errMongo, school);
                 if (errMongo) {
                     const err = new APIError('No such school exists!', httpStatus.NOT_FOUND);
                     reject(err);
