@@ -6,11 +6,11 @@
   "dependencies": {
     "body-parser": "^1.14.2",
     "cors": "^2.7.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "babel-cli": "^6.4.5"
   },
   "devDependencies": {
     "babel": "^6.3.26",
-    "babel-cli": "^6.4.5",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
@@ -18,7 +18,8 @@
     "webpack": "^1.12.12"
   },
   "scripts": {
-    "start": "DEBUG=express:* node_modules/.bin/babel-node index.js"
+    "start": "DEBUG=express:* node_modules/.bin/babel-node ./src/app.js",
+    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
