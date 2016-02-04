@@ -27,7 +27,7 @@
     "webpack": "^1.12.12"
   },
   "scripts": {
-    "start": "DEBUG=express:* node_modules/.bin/babel-node ./src/app.js",
+    "start": "ENV_VAR=docker_dev DEBUG=express:* node_modules/.bin/babel-node ./src/app.js",
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "repository": {
