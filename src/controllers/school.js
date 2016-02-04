@@ -7,7 +7,8 @@ function getOne(req, res, next, id) {
 }
 
 function list(req, res, next){
-    School.list().then(schools => res.json(schools)).catch(e => next(e));
+    const { limit = 50, skip = 0 } = req.query;
+    School.list({ limit, skip }).then(schools => res.json(schools)).catch(e => next(e));
 }
 
 export default {getOne, list};

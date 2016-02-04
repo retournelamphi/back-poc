@@ -60,16 +60,14 @@ SchoolSchema.statics = {
             })
         });
     },
-    list(){
+    list({ skip = 0, limit = 50 } = {}){
         return new Promise((resolve, reject) => {
-            this.find((errMongo, schools) => {
+            resolve(this.find((errMongo) => {
                 if (errMongo) {
                     const err = new APIError('Fatal error', httpStatus.FAILURE);
                     reject(err);
-                } else if (schools) {
-                    resolve(schools);
                 }
-            });
+            }).skip(parseInt(skip)).limit(parseInt(limit)));
         });
     }
 };
