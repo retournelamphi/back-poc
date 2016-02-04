@@ -62,12 +62,14 @@ SchoolSchema.statics = {
     },
     list({ skip = 0, limit = 50 } = {}){
         return new Promise((resolve, reject) => {
-            resolve(this.find((errMongo) => {
+            var result = this.find((errMongo, schools) => {
                 if (errMongo) {
                     const err = new APIError('Fatal error', httpStatus.FAILURE);
                     reject(err);
+                } else if (schools){
+                    resolve(result);
                 }
-            }).skip(parseInt(skip)).limit(parseInt(limit)));
+            }).skip(parseInt(skip)).limit(parseInt(limit));
         });
     }
 };
