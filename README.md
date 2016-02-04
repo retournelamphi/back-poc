@@ -1,4 +1,4 @@
-Projet avec Eric Lépine.
+##best-degree
 
-Système de branche utilisé [git-flow](https://github.com/nvie/gitflow)
+- [git-flow](https://github.com/nvie/gitflow)
 

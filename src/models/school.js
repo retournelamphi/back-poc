@@ -3,16 +3,49 @@ import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
 
 const SchoolSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
+    type: {
+        type: String
     },
-    description: {
-        type: String,
-        required: true
+    name: {
+        type: String
+    },
+    acronym: {
+        type: String
+    },
+    status: {
+        type: String
+    },
+    tutor: {
+        type: String
+    },
+    university: {
+        type: String
+    },
+    adress: {
+        type: String
+    },
+    zip: {
+        type: String
+    },
+    town: {
+        type: String
+    },
+    department: {
+        type: String
+    },
+    academy: {
+        type: String
+    },
+    region: {
+        type: String
+    },
+    longitude: {
+        type: String
+    },
+    latitude: {
+        type: String
     }
 });
-
 
 SchoolSchema.statics = {
     get(id){
