@@ -35,7 +35,7 @@
     "babel-nodemon": "nodemon --exec ./node_modules/.bin/babel-node --",
     "start": "ENV_VAR=docker_dev DEBUG=express:* npm run babel-nodemon src/app.js",
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js",
-    "import": "ENV_VAR=dev node_modules/.bin/babel-node ./raw_data/import_data.js"
+    "import": "ENV_VAR=docker_dev node_modules/.bin/babel-node ./raw_data/import_data.js"
   },
   "repository": {
     "type": "git",

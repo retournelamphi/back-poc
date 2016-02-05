@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import mongoosastic from 'mongoosastic';
-import ElasticInstance from '../../helpers/elastic/instance-factory';
+import elasticClient from '../../helpers/elastic/client';
 
 let Schema = new mongoose.Schema({
   type: {
@@ -47,8 +47,9 @@ let Schema = new mongoose.Schema({
   }
 });
 
+/* Elasticsearch mongoose configuration */
 Schema.plugin(mongoosastic, {
-  esClient:ElasticInstance
+  esClient:elasticClient
 });
 
 export default Schema;
