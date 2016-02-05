@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import mongoosastic from 'mongoosastic';
 
-export default new mongoose.Schema({
+let Schema = new mongoose.Schema({
   type: {
     type: String
   },
@@ -44,3 +45,8 @@ export default new mongoose.Schema({
     type: String
   }
 });
+
+Schema.plugin(mongoosastic);
+
+export default Schema;
+

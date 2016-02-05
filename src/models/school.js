@@ -3,6 +3,7 @@ import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
 import SchoolSchema from './schemas/school';
 
+
 SchoolSchema.statics = {
     get(id){
         return new Promise((resolve, reject) => {
