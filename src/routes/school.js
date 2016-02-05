@@ -6,6 +6,9 @@ const router = express.Router();
 router.route('/')
     .get(schoolCtrl.list);
 
+router.route('/query')
+    .get(schoolCtrl.query);
+
 router.route('/:schoolId')
     .get(schoolCtrl.getOne);
 

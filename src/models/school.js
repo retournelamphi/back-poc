@@ -31,4 +31,4 @@ SchoolSchema.statics = {
     }
 };
 
-export default mongoose.model('schools', SchoolSchema);
+export default mongoose.model('school', SchoolSchema);
