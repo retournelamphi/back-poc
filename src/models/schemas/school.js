@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import mongoosastic from 'mongoosastic';
+import ElasticInstance from '../../helpers/elastic/instance-factory';
 
 let Schema = new mongoose.Schema({
   type: {
@@ -46,7 +47,9 @@ let Schema = new mongoose.Schema({
   }
 });
 
-Schema.plugin(mongoosastic);
+Schema.plugin(mongoosastic, {
+  esClient:ElasticInstance
+});
 
 export default Schema;
 
