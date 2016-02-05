@@ -7,6 +7,11 @@
     },
     "express": {
       "port": 3000
+    },
+    "elasticsearch": {
+      "host":"localhost",
+      "port":9200,
+      "log":"trace"
     }
   },
   "docker_dev": {
@@ -17,6 +22,11 @@
     },
     "express": {
       "port": 3000
+    },
+    "elasticsearch": {
+      "host":"192.168.99.100",
+      "port":9200,
+      "log":"trace"
     }
   },
   "prod": {

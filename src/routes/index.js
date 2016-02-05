@@ -8,6 +8,10 @@ router.get('/health-check', (req, res) =>
     res.send('OK')
 );
 
+router.get('/elastic', (req, res) => {
+  res.send(200);
+});
+
 // mount user routes at /schools
 router.use('/schools', schoolRoutes);
 
