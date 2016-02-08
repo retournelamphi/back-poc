@@ -7,13 +7,15 @@ let Schema = new mongoose.Schema({
     type: String
   },
   name: {
-    type: String
+    type: String,
+    required: true
   },
   acronym: {
     type: String
   },
   status: {
-    type: String
+    type: String,
+    required:true
   },
   tutor: {
     type: String
@@ -22,28 +24,36 @@ let Schema = new mongoose.Schema({
     type: String
   },
   adress: {
-    type: String
+    type: String,
+    required: true
   },
   zip: {
-    type: String
+    type: String,
+    required: true
   },
   town: {
-    type: String
+    type: String,
+    required: true
   },
   department: {
-    type: String
+    type: String,
+    required: true
   },
   academy: {
-    type: String
+    type: String,
+    required: true
   },
   region: {
-    type: String
+    type: String,
+    required: true
   },
   longitude: {
-    type: String
+    type: String,
+    required: true
   },
   latitude: {
-    type: String
+    type: String,
+    required: true
   }
 });
 
