@@ -9,8 +9,13 @@
 
 ##use
 
+###launch
 - `npm run start`
 - GET `/api/health-check`
+
+###test
+
+- `npm run test`
 
 ##stack
 
@@ -24,6 +29,8 @@
 
 - [nodemon](http://nodemon.io/)
 - [babel](https://www.npmjs.com/package/babel)
+- [mocha](http://mochajs.org/)
+- [chai](http://chaijs.com/)
 
 ###production
 
