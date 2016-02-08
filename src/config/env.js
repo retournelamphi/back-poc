@@ -9,8 +9,6 @@ const generateConf = () => {
   switch (process.env.ENV_VAR) {
     case 'dev':
       return config.dev;
-    case 'docker_dev':
-      return config.docker_dev;
     case 'prod':
       return config.prod;
     default:

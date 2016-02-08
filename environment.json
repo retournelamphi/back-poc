@@ -1,21 +1,6 @@
 {
   "dev": {
     "mongodb": {
-      "host": "localhost",
-      "database": "best-degree",
-      "port": 27017
-    },
-    "express": {
-      "port": 3000
-    },
-    "elasticsearch": {
-      "host":"localhost",
-      "port":9200,
-      "log":"trace"
-    }
-  },
-  "docker_dev": {
-    "mongodb": {
       "host": "192.168.99.100",
       "database": "best-degree",
       "port": 27017
