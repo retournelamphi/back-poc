@@ -6,14 +6,14 @@ import config from '../../environment.json';
  * @returns {*}
  */
 const generateConf = () => {
-  switch (process.env.ENV_VAR) {
-    case 'dev':
-      return config.dev;
-    case 'prod':
-      return config.prod;
-    default:
-      return config.dev;
-  }
+    switch (process.env.ENV_VAR) {
+        case 'dev':
+            return config.dev;
+        case 'prod':
+            return config.prod;
+        default:
+            return config.dev;
+    }
 };
 
 export default generateConf();

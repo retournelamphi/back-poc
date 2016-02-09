@@ -1,5 +1,6 @@
 import express from 'express';
 import schoolRoutes from './school';
+import degreeRoutes from './degree';
 import { pingCluster } from '../helpers/elastic/utils';
 
 const router = express.Router();	// eslint-disable-line new-cap
@@ -10,10 +11,11 @@ router.get('/health-check', (req, res) =>
 );
 
 router.get('/elastic', (req, res) => {
-  pingCluster().then((result) => res.send(result));
+    pingCluster().then((result) => res.send(result));
 });
 
 // mount user routes at /schools
 router.use('/schools', schoolRoutes);
+router.use('/degrees', degreeRoutes);
 
 export default router;

@@ -45,8 +45,8 @@ export function create(req, res, next) {
         .catch(e => next(e));
 }
 
-export function remove(req, res, next, id){
-        School.remove(id)
-            .then(deletedSchool => res.json(deletedSchool))
-            .catch(e => next(e));
+export function remove(req, res, next, id) {
+    School.remove(id)
+        .then(deletedSchool => res.json(deletedSchool))
+        .catch(e => next(e));
 }

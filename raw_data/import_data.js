@@ -12,7 +12,7 @@ mongoose.connection.on('error', λ => {
     throw new Error(`unable to connect to database: ${config.db}`);
 });
 
-const createObj = (item) => {
+const createObjSchool = (item) => {
     return {
         type: item['type d\'établissement'],
         name: item.nom,
@@ -31,13 +31,24 @@ const createObj = (item) => {
     };
 };
 
+const createObjDegree = (item) => {
+    return {
+        type: item.type,
+        label: item['libellé principal'],
+        detailLabel: item['libellé complémentaire'],
+        duration: item['durée'],
+        tutor: item['tutelle'],
+        rnpcLevel: item['niveau RNCP']
+    };
+};
+
 const insertEtabSup = () => {
     console.log('insert etab_sup');
     const etab_sup = csvjson
         .toObject('./raw_data/etablissement_superieur.csv')
         .output;
     etab_sup.forEach((item) => {
-        var itemMongo = createObj(item);
+        var itemMongo = createObjSchool(item);
         let schoolSchema = new school(itemMongo);
         schoolSchema.save();
     });
@@ -50,16 +61,28 @@ const insertEtabSecond = () => {
         .toObject('./raw_data/etablissement_secondaire.csv')
         .output;
     etab_secondaire.forEach((item) => {
-        var itemMongo = createObj(item);
+        var itemMongo = createObjSchool(item);
         let schoolSchema = new school(itemMongo);
         schoolSchema.save();
     });
+};
+
+const insertDegree = () => {
+    console.log('insert degree');
+    const degrees = csvjson
+        .toObject('./raw_data/formation.csv')
+        .output;
+    degrees.forEach((item) => {
+        var itemMongo = createObjDegree(item);
+        console.log(itemMongo);
+    })
 };
 
 mongoose.connection.collections['schools'].drop(λ => {
     console.log('collection schools dropped');
     async.parallel([
         λ => insertEtabSecond(),
-        λ => insertEtabSup()
+        λ => insertEtabSup(),
+        λ => insertDegree()
     ]);
 });

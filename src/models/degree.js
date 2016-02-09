@@ -1,44 +1,42 @@
 import mongoose from 'mongoose';
 import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
-import SchoolSchema from './schemas/school';
+import DegreeSchema from './schemas/degree';
 import elastic from '../helpers/elastic/client';
 
-SchoolSchema.statics = {
+DegreeSchema.statics = {
     get(id){
         return new Promise((resolve, reject) => {
-            this.findById(id, (errMongo, school) => {
+            this.findById(id, (errMongo, degree) => {
                 if (errMongo) {
-                    const err = new APIError('No such school exists!', httpStatus.NOT_FOUND);
+                    const err = new APIError('No such degree exists!', httpStatus.NOT_FOUND);
                     reject(err);
-                } else if (school) {
-                    resolve(school);
+                } else if (degree) {
+                    resolve(degree);
                 }
             })
         });
     },
     list({ skip = 0, limit = 50 } = {}){
         return new Promise((resolve, reject) => {
-            var result = this.find((errMongo, schools) => {
+            var result = this.find((errMongo, degrees) => {
                 if (errMongo) {
                     const err = new APIError('Fatal error', httpStatus.FAILURE);
                     reject(err);
-                } else if (schools) {
+                } else if (degrees) {
                     resolve(result);
                 }
             }).skip(parseInt(skip)).limit(parseInt(limit));
         });
     },
-    searchOnName(queryText) {
+    searchOnElastic(queryObj) {
         return new Promise((resolve, reject) => {
             const query_opts = {
-                index: 'schools',
-                type: 'school',
+                index: 'degrees',
+                type: 'degree',
                 body: {
                     query: {
-                        match: {
-                            name: queryText
-                        }
+                        match: queryObj
                     }
                 }
             };
@@ -56,4 +54,4 @@ SchoolSchema.statics = {
     }
 };
 
-export default mongoose.model('school', SchoolSchema);
+export default mongoose.model('degree', DegreeSchema);
