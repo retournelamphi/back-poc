@@ -1,12 +1,17 @@
 language: node_js
 node_js:
-  - "5.5"
+- "stable"
 services:
   - mongodb
   - elasticsearch
+cache:
+  directories:
+  - node_modules
 git:
   depth: 3
 before_script:
   - sleep 10
+  - npm install codecov.io
 after_script:
   - npm run coverage
+  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js && rm -rf ./coverage
