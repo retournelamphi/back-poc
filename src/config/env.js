@@ -11,6 +11,8 @@ const generateConf = () => {
             return config.dev;
         case 'prod':
             return config.prod;
+        case 'ci':
+            return config.ci;
         default:
             return config.dev;
     }

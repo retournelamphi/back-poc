@@ -14,6 +14,21 @@
       "log":"trace"
     }
   },
+  "ci": {
+    "mongodb": {
+      "host": "localhost",
+      "database": "best-degree",
+      "port": 27017
+    },
+    "express": {
+      "port": 3000
+    },
+    "elasticsearch": {
+      "host":"localhost",
+      "port":9200,
+      "log":"trace"
+    }
+  },
   "prod": {
 
   }
