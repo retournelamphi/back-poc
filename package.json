@@ -44,9 +44,10 @@
     "start": "ENV_VAR=dev DEBUG=express:* npm run babel-nodemon src/app.js",
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "import": "ENV_VAR=dev node_modules/.bin/babel-node ./raw_data/import_data.js",
-    "test": "mocha --compilers js:babel-core/register",
-    "coverage":"ENV_VAR=dev babel-node ./node_modules/.bin/isparta cover _mocha",
-    "coverage-ci": "ENV_VAR=ci babel-node ./node_modules/.bin/isparta cover _mocha"
+    "test": "ENV_VAR=ci mocha --compilers js:babel-core/register",
+    "test-dev": "ENV_VAR=dev mocha --compilers js:babel-core/register",
+    "coverage-dev":"ENV_VAR=dev babel-node ./node_modules/.bin/isparta cover _mocha",
+    "coverage": "ENV_VAR=ci babel-node ./node_modules/.bin/isparta cover _mocha"
   },
   "repository": {
     "type": "git",
