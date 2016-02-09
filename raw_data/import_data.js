@@ -81,8 +81,8 @@ const insertDegree = () => {
 mongoose.connection.collections['schools'].drop(λ => {
     console.log('collection schools dropped');
     async.parallel([
-        //λ => insertEtabSecond(),
-        //λ => insertEtabSup(),
+        λ => insertEtabSecond(),
+        λ => insertEtabSup(),
         λ => insertDegree()
     ]);
 });

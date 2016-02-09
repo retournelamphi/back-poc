@@ -5,9 +5,9 @@ import app from './config/express';
 // connect to mongo db
 const mongoPath = `mongodb://${config.mongodb.host}:${config.mongodb.port}/${config.mongodb.database}`;
 
-mongoose.connect(mongoPath, { server: { socketOptions: { keepAlive: 1 } } });
+mongoose.connect(mongoPath, {server: {socketOptions: {keepAlive: 1}}});
 mongoose.connection.on('error', λ => {
-  throw new Error(`unable to connect to database: ${mongoPath}`);
+    throw new Error(`unable to connect to database: ${mongoPath}`);
 });
 
 const debug = require('debug')('best-degree:index');

@@ -54,7 +54,7 @@ describe('## Degree APIs', () => {
                 });
         });
 
-        it('should report error with message - Not found, when school does not exists', (done) => {
+        it('should report error with message - Not found, when degree does not exists', (done) => {
             request(app)
                 .get('/api/degrees/56c787ccc67fc16ccc1a5e9')
                 .expect(httpStatus.NOT_FOUND)

@@ -4,11 +4,11 @@ import elasticClient from '../../helpers/elastic/client';
 
 let Schema = new mongoose.Schema({
     type: {
-        type:String,
-        required:true
+        type: String,
+        required: true
     },
     label: {
-        required:true,
+        required: true,
         type: String
     },
     detailLabel: {
@@ -27,7 +27,7 @@ let Schema = new mongoose.Schema({
 
 /* Elasticsearch mongoose configuration */
 Schema.plugin(mongoosastic, {
-    esClient:elasticClient
+    esClient: elasticClient
 });
 
 export default Schema;

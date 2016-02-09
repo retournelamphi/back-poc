@@ -11,7 +11,7 @@ router.get('/health-check', (req, res) =>
 );
 
 router.get('/elastic', (req, res) => {
-  pingCluster().then((result) => res.send(result));
+    pingCluster().then((result) => res.send(result));
 });
 
 // mount user routes at /schools

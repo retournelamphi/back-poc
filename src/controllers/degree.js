@@ -36,7 +36,7 @@ export function create(req, res, next) {
         .catch(e => next(e));
 }
 
-export function remove(req, res, next, id){
+export function remove(req, res, next, id) {
     Degree.remove(id)
         .then(deletedDegree => res.json(deletedDegree))
         .catch(e => next(e));

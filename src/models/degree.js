@@ -23,7 +23,7 @@ DegreeSchema.statics = {
                 if (errMongo) {
                     const err = new APIError('Fatal error', httpStatus.FAILURE);
                     reject(err);
-                } else if (degrees){
+                } else if (degrees) {
                     resolve(result);
                 }
             }).skip(parseInt(skip)).limit(parseInt(limit));
@@ -32,8 +32,8 @@ DegreeSchema.statics = {
     searchOnElastic(queryObj) {
         return new Promise((resolve, reject) => {
             const query_opts = {
-                index:'degrees',
-                type:'degree',
+                index: 'degrees',
+                type: 'degree',
                 body: {
                     query: {
                         match: queryObj
@@ -46,7 +46,7 @@ DegreeSchema.statics = {
                     const hits = body.hits.hits;
                     resolve(hits);
                 },
-                function(error) {
+                function (error) {
                     reject(error)
                 });
 
