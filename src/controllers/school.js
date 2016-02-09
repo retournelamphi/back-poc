@@ -12,8 +12,8 @@ export function list(req, res, next) {
 }
 
 export function query(req, res, next) {
-    const queryText = req.query.text;
-    School.searchOnName(queryText)
+    const queryObj = req.body;
+    School.searchOnElasticSearch(queryObj)
         .then(results => {
             res.send(results)
         })

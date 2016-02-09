@@ -7,8 +7,8 @@ router.route('/')
     .get(schoolCtrl.list)
     .post(schoolCtrl.create);
 
-router.route('/query')
-    .get(schoolCtrl.query);
+router.route('/search')
+    .post(schoolCtrl.query);
 
 router.route('/:schoolId')
     .get(schoolCtrl.getOne)

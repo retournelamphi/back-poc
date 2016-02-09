@@ -29,16 +29,14 @@ SchoolSchema.statics = {
       }).skip(parseInt(skip)).limit(parseInt(limit));
     });
   },
-  searchOnName(queryText) {
+  searchOnElasticSearch(queryObj) {
     return new Promise((resolve, reject) => {
       const query_opts = {
         index:'schools',
         type:'school',
         body: {
           query: {
-            match: {
-              name: queryText
-            }
+            match: queryObj
           }
         }
       };
