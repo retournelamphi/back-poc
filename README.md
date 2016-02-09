@@ -24,7 +24,8 @@
 
 ###test
 
-- `npm run test`
+- `npm run test-dev`
+- `npm run coverage-dev`
 
 ##stack
 
