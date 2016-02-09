@@ -14,7 +14,8 @@ before_script:
   - npm install codecov.io
 after_script:
   - npm run coverage
-  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js && rm -rf ./coverage
+  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+  - cat ./coverage/lcov.info | codeclimate-test-reporter && rm -rf ./coverage
 addons:
     code_climate:
         repo_token: f1c1888fbee245078cf9d8508a508070343c6efe284d6392d3504677ef55f626
