@@ -1,6 +1,6 @@
 #best-degree
 
-[![Build Status](https://travis-ci.org/Jermorin/best-degree.svg?branch=master)](https://travis-ci.org/Jermorin/best-degree)
+[![Build Status](https://travis-ci.org/Jermorin/best-degree.svg?branch=develop)](https://travis-ci.org/Jermorin/best-degree)
 [![Code Climate](https://codeclimate.com/github/Jermorin/best-degree/badges/gpa.svg)](https://codeclimate.com/github/Jermorin/best-degree)
 [![codecov.io](https://codecov.io/github/Jermorin/best-degree/coverage.svg?branch=develop)](https://codecov.io/github/Jermorin/best-degree?branch=develop)
 [![Test Coverage](https://codeclimate.com/github/Jermorin/best-degree/badges/coverage.svg)](https://codeclimate.com/github/Jermorin/best-degree/coverage)
