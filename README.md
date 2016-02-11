@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/retournelamphi/back-poc.svg?branch=develop)](https://travis-ci.org/retournelamphi/back-poc)
 [![Code Climate](https://codeclimate.com/github/retournelamphi/back-poc/badges/gpa.svg)](https://codeclimate.com/github/retournelamphi/back-poc)
-[![Build Status](https://travis-ci.org/retournelamphi/back-poc.svg?branch=develop)](https://travis-ci.org/retournelamphi/back-poc)
+[![codecov.io](https://codecov.io/github/retournelamphi/back-poc/coverage.svg?branch=develop)](https://codecov.io/github/retournelamphi/back-poc?branch=develop)
 [![bitHound Overall Score](https://www.bithound.io/github/retournelamphi/back-poc/badges/score.svg)](https://www.bithound.io/github/retournelamphi/back-poc)
 
 [![bitHound Dependencies](https://www.bithound.io/github/retournelamphi/back-poc/badges/dependencies.svg)](https://www.bithound.io/github/retournelamphi/back-poc/develop/dependencies/npm)
