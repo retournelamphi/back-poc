@@ -1,6 +1,6 @@
 #back-poc
 
-[![Build Status](https://travis-ci.org/retourneLamphi/best-degree.svg?branch=develop)](https://travis-ci.org/retourneLamphi/best-degree)
+[![Build Status](https://travis-ci.org/retournelamphi/back-poc.svg?branch=develop)](https://travis-ci.org/retournelamphi/back-poc)
 [![Code Climate](https://codeclimate.com/github/retournelamphi/back-poc/badges/gpa.svg)](https://codeclimate.com/github/retournelamphi/back-poc)
 [![Build Status](https://travis-ci.org/retournelamphi/back-poc.svg?branch=develop)](https://travis-ci.org/retournelamphi/back-poc)
 [![bitHound Overall Score](https://www.bithound.io/github/retournelamphi/back-poc/badges/score.svg)](https://www.bithound.io/github/retournelamphi/back-poc)
