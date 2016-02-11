@@ -1,13 +1,13 @@
 #best-degree
 
-[![Build Status](https://travis-ci.org/Jermorin/best-degree.svg?branch=develop)](https://travis-ci.org/Jermorin/best-degree)
-[![Code Climate](https://codeclimate.com/github/Jermorin/best-degree/badges/gpa.svg)](https://codeclimate.com/github/Jermorin/best-degree)
-[![codecov.io](https://codecov.io/github/Jermorin/best-degree/coverage.svg?branch=develop)](https://codecov.io/github/Jermorin/best-degree?branch=develop)
-[![bitHound Overall Score](https://www.bithound.io/github/Jermorin/best-degree/badges/score.svg)](https://www.bithound.io/github/Jermorin/best-degree)
+[![Build Status](https://travis-ci.org/retourneLamphi/best-degree.svg?branch=develop)](https://travis-ci.org/retourneLamphi/best-degree)
+[![Code Climate](https://codeclimate.com/github/retourneLamphi/best-degree/badges/gpa.svg)](https://codeclimate.com/github/retourneLamphi/best-degree)
+[![codecov.io](https://codecov.io/github/retourneLamphi/best-degree/coverage.svg?branch=develop)](https://codecov.io/github/retourneLamphi/best-degree?branch=develop)
+[![bitHound Overall Score](https://www.bithound.io/github/retourneLamphi/best-degree/badges/score.svg)](https://www.bithound.io/github/retourneLamphi/best-degree)
 
-[![bitHound Dependencies](https://www.bithound.io/github/Jermorin/best-degree/badges/dependencies.svg)](https://www.bithound.io/github/Jermorin/best-degree/develop/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/Jermorin/best-degree/badges/devDependencies.svg)](https://www.bithound.io/github/Jermorin/best-degree/develop/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/Jermorin/best-degree/badges/code.svg)](https://www.bithound.io/github/Jermorin/best-degree)
+[![bitHound Dependencies](https://www.bithound.io/github/retourneLamphi/best-degree/badges/dependencies.svg)](https://www.bithound.io/github/retourneLamphi/best-degree/develop/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/retourneLamphi/best-degree/badges/devDependencies.svg)](https://www.bithound.io/github/retourneLamphi/best-degree/develop/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/retourneLamphi/best-degree/badges/code.svg)](https://www.bithound.io/github/retourneLamphi/best-degree)
 
 ##firt use
 
