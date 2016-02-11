@@ -1,7 +1,7 @@
 {
-  "name": "best-degree",
+  "name": "back-poc",
   "version": "0.0.1",
-  "description": "Side project for eric lepine",
+  "description": "retournelamphi",
   "main": "src/app.js",
   "dependencies": {
     "babel-cli": "^6.4.5",
