@@ -56,6 +56,6 @@
 
 ##todo
 
-[ ] improve the grab
-[ ] improve elasticSearch
-[ ] test elasticSearch function
+- [ ] improve the grab
+- [ ] improve elasticSearch
+- [ ] test elasticSearch function
